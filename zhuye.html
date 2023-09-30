@@ -1,0 +1,370 @@
+<!DOCTYPE html><!--做后面页面时，参考下面的注释！-->
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>实验3</title>
+	<style type="text/css">
+		.daohang {
+			/*设置导航栏的大框框*/
+			margin: 0px auto;
+			/*框框整体的位置，0px是指离网页的顶部和下部的距离，auto控制的是左右距离为自动调节*/
+			width: 1620px;
+			/*框框的宽度*/
+			height: 1000px;
+			/*框框的长度*/
+			padding: 0px;
+			/*将框框的padding设置为零，不然会导致框框里的内容与大框边缘有间隔*/
+			border: 1px solid#464444;
+			/*添加边框,虽然说和背景一样就是了。*/
+			position: fixed;
+			top: 0;
+			z-index: 999;
+			width: 100%;
+			/*这四条应该可以实现吸顶，分别是固定，对齐，确保在其它栏之上，设置宽度*/
+			float: left;
+			/*放在左边*/
+		}
+
+		li {
+			list-style-type: none;
+			/*这样小框里面的字就没有下划线了！！！！*/
+		}
+
+		.daohanglande {
+			display: block;
+			/*将a变成块状*/
+			width: 200px;
+			/*设置块的宽度*/
+			height: 115px;
+			/*设置块的长度*/
+			font-family: Microsoft Yahei;
+			/*字体，哈哈，yahei*/
+			line-height: 100px;
+			/*设置字体在块中的高度*/
+			background-color: #222020;
+			margin: 0px 0px;
+			/*小框框的上下左右边距*/
+			color: #575555;
+			text-align: center;
+			/*字体居中*/
+			text-decoration: none;
+			/*这个用来消除下划线*/
+			font-size: 15px;
+
+		}
+
+		.daohanglande:hover {
+			background-color: #771908;
+			/*鼠标干上去，产生交互作用（变色)*/
+		}
+
+
+		.gongjulan1 {
+			float: left;
+			/*放左边*/
+			width: 400px;
+			height: 800px;
+			background-color: #980c0c;
+			margin-left: 220px;
+			border-radius: 3%;
+			position: fixed;
+			top: 0;
+			z-index: 999;
+
+		}
+
+		.gongjulandebiaoti {
+			text-align: center;
+		}
+
+		.sousuolan {
+			display: flex;
+			width: 100%;
+			background-color: #201e1e;
+		}
+
+		.sousuolanshuru {
+			flex: 1;
+			border: none;
+			outline: none;
+			padding: 8px;
+			font-size: 14px;
+			background-color: transparent;
+			color: aliceblue;
+		}
+
+		.sousuolananniu {
+			padding: 8px 12px;
+			background-color: #2e2e2d;
+			color: #a40a0a;
+			border: none;
+			outline: none;
+			cursor: pointer;
+		}
+
+		.zhengwenbufen {
+			display: flex;
+			flex-direction: column;
+			float: right;
+
+		}
+
+		.zhengwenbiaoti {
+			border-radius: 10px;
+			float: right;
+			background-color: #900404;
+			padding: 20px;
+			margin-bottom: 15px;
+			width: 200px;
+			height: 60px;
+			text-decoration: none;
+
+		}
+
+		.zhengwenbiaotidezi {
+			text-align: center;
+			line-height: 50%;
+			color: aliceblue;
+		}
+
+		.zhengwenlan {
+			border-radius: 20px;
+			/*圆角*/
+			float: right;
+			/*放右边*/
+			background-color: #393636;
+			padding: 40px;
+			/*填充小框*/
+			margin-bottom: 10px;
+			width: 910px;
+			height: 150px;
+
+		}
+
+
+		.yonghumintouxiangbiaoti {
+			display: flex;
+			align-items: center;
+			/* 垂直居中对齐 */
+			gap: 20px;
+			/* 图片和文字之间的间距 */
+		}
+
+		.yonghumin {
+			line-height: 0.4;
+			color: aliceblue;
+		}
+
+		.hangneizhengwen {
+			color: aliceblue;
+		}
+
+		.zhengwenlanchaolianjie {
+			text-decoration: none;
+		}
+
+		.zhengwenlanchaolianjie:hover {
+			background-color: #771908;
+		}
+		html
+        
+		.gongjulantubiao {
+			display: block;
+			width: 30px;
+			height: 30px;
+			margin-bottom: 20px;
+			margin-top: 20px;
+			margin-left: 10px;
+			background-color: #900000;
+			color: #2d2a2a;
+			line-height: 30px;
+			text-align: center;
+			border-radius: 50%;
+			font-size: 28px;
+		}
+	</style>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+
+<body style="background-color: rgb(42, 43, 43);">
+	<div>
+		<ul class="daohang">
+
+			<li><a href="" class="daohanglande">LAATCODE</a></li>
+			<li><a href="" class="daohanglande">学习</a></li>
+			<li><a href="" class="daohanglande">题库</a></li>
+			<li><a href="" class="daohanglande">竞赛</a></li>
+			<li><a href="" class="daohanglande">讨论</a></li>
+			<li><a href="" class="daohanglande">求职</a></li>
+			<li><a href="" class="daohanglande">商城</a></li>
+			<img src="logo2.jpg" width="200px" height="150px" alt="一个logo"> <!--哼哼，这可是我自己画的哦！！！-->
+		</ul>
+	</div>
+	<div class="gongjulan1">
+		<div class="gongjulandebiaoti">
+			<h3>暂定工具栏及用户界面</h3>
+		</div>
+		<div class="sousuolan">
+			<input type="text" placeholder="百度一下,你就知道(bushi)" class="sousuolanshuru">
+			<button type="button" class="sousuolananniu">搜索</button>
+		</div>
+		<div class="gongjulantubiao">
+			<i class="gongjulantubiao fas fa-comment"></i>
+			<i class="gongjulantubiao fas fa-camera-retro"></i>
+			<i class="gongjulantubiao fas fa-map-marker-alt"></i>
+			<i class="gongjulantubiao fas fa-phone"></i>
+			<i class="gongjulantubiao fas fa-envelope"></i>
+			<i class="gongjulantubiao fas fa-cloud"></i>
+			<i class="gongjulantubiao fas fa-heart"></i>
+			<i class="gongjulantubiao fas fa-music"></i>
+			<i class="gongjulantubiao fas fa-search"></i>
+			<i class="gongjulantubiao fas fa-globe"></i>
+			<i class="gongjulantubiao fas fa-shield-alt"></i>
+			<i class="gongjulantubiao fas fa-shopping-cart"></i>
+		</div>
+	</div>
+
+	
+	
+
+	<div class="zhengwenzuidadediv">
+		<div class="zhengwenbufen">
+			<div class="zhengwenbiaoti">
+				<div class="zhengwenbiaotidezi">
+
+					<h1>一些文章</h1>
+
+				</div>
+
+			</div>
+			<div class="zhengwenlan">
+
+				<div class="yonghumintouxiangbiaoti">
+					<div class="yonghutouxiang">
+						<img src="logo.jpg" alt="touxiang" width="55px" height="55px">
+					</div>
+					<div class="yonghumin">
+						<h4>LAAT哥</h4>
+						<h2>第一篇文章</h2>
+					</div>
+				</div>
+				<div class="hangneizhengwen">
+					<p>游戏发生在一个被称作“提瓦特大陆”的幻想世界，在这里，被神选中的人将被授予“神之眼”，导引元素之力。玩家将扮演一位名为“旅行者”的神秘角色，在自由的旅行中邂逅性格各异、能力独特的同伴们，和他们一起击败强敌，找回失散的亲人——同时，逐步发掘“原神”的真相
+						[4] 。</p>
+				</div>
+
+			</div>
+			<div class="zhengwenlan">
+
+				<div class="yonghumintouxiangbiaoti">
+					<div class="yonghutouxiang">
+						<img src="logo.jpg" alt="touxiang" width="55px" height="55px">
+					</div>
+					<div class="yonghumin">
+						<h4>LAAT哥</h4>
+						<h2>第二篇文章</h2>
+					</div>
+				</div>
+				<div class="hangneizhengwen">
+					<p>游戏发生在一个被称作“提瓦特大陆”的幻想世界，在这里，被神选中的人将被授予“神之眼”，导引元素之力。玩家将扮演一位名为“旅行者”的神秘角色，在自由的旅行中邂逅性格各异、能力独特的同伴们，和他们一起击败强敌，找回失散的亲人——同时，逐步发掘“原神”的真相
+						[4] 。</p>
+				</div>
+
+			</div>
+			<div class="zhengwenlan">
+
+				<div class="yonghumintouxiangbiaoti">
+					<div class="yonghutouxiang">
+						<img src="logo.jpg" alt="touxiang" width="55px" height="55px">
+					</div>
+					<div class="yonghumin">
+						<h4>LAAT哥</h4>
+						<h2>第三篇文章</h2>
+					</div>
+				</div>
+				<div class="hangneizhengwen">
+					<p>游戏发生在一个被称作“提瓦特大陆”的幻想世界，在这里，被神选中的人将被授予“神之眼”，导引元素之力。玩家将扮演一位名为“旅行者”的神秘角色，在自由的旅行中邂逅性格各异、能力独特的同伴们，和他们一起击败强敌，找回失散的亲人——同时，逐步发掘“原神”的真相
+						[4] 。</p>
+				</div>
+
+			</div>
+			<div class="zhengwenlan">
+
+				<div class="yonghumintouxiangbiaoti">
+					<div class="yonghutouxiang">
+						<img src="logo.jpg" alt="touxiang" width="55px" height="55px">
+					</div>
+					<div class="yonghumin">
+						<h4>LAAT哥</h4>
+						<h2>第四篇文章</h2>
+					</div>
+				</div>
+				<div class="hangneizhengwen">
+					<p>游戏发生在一个被称作“提瓦特大陆”的幻想世界，在这里，被神选中的人将被授予“神之眼”，导引元素之力。玩家将扮演一位名为“旅行者”的神秘角色，在自由的旅行中邂逅性格各异、能力独特的同伴们，和他们一起击败强敌，找回失散的亲人——同时，逐步发掘“原神”的真相
+						[4] 。</p>
+				</div>
+
+			</div>
+			<div class="zhengwenlan">
+
+				<div class="yonghumintouxiangbiaoti">
+					<div class="yonghutouxiang">
+						<img src="logo.jpg" alt="touxiang" width="55px" height="55px">
+					</div>
+					<div class="yonghumin">
+						<h4>LAAT哥</h4>
+						<h2>第五篇文章</h2>
+					</div>
+				</div>
+				<div class="hangneizhengwen">
+					<p>游戏发生在一个被称作“提瓦特大陆”的幻想世界，在这里，被神选中的人将被授予“神之眼”，导引元素之力。玩家将扮演一位名为“旅行者”的神秘角色，在自由的旅行中邂逅性格各异、能力独特的同伴们，和他们一起击败强敌，找回失散的亲人——同时，逐步发掘“原神”的真相
+						[4] 。</p>
+				</div>
+
+			</div>
+			<div class="zhengwenlan">
+
+				<div class="yonghumintouxiangbiaoti">
+					<div class="yonghutouxiang">
+						<img src="logo.jpg" alt="touxiang" width="55px" height="55px">
+					</div>
+					<div class="yonghumin">
+						<h4>LAAT哥</h4>
+						<h2>第六篇文章</h2>
+					</div>
+				</div>
+				<div class="hangneizhengwen">
+					<p>游戏发生在一个被称作“提瓦特大陆”的幻想世界，在这里，被神选中的人将被授予“神之眼”，导引元素之力。玩家将扮演一位名为“旅行者”的神秘角色，在自由的旅行中邂逅性格各异、能力独特的同伴们，和他们一起击败强敌，找回失散的亲人——同时，逐步发掘“原神”的真相
+						[4] 。</p>
+				</div>
+
+			</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		</div>
+	</div>
+</body>
+
+</html>
