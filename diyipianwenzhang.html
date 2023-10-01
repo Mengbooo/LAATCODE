@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>diyipianwenzhang</title>
+	<style>
+		.daohang {
+			/*这个和导航栏小框是连体的，规定一个最大的框，但为了美观，调色至不可见*/
+
+			margin: 0px auto;
+			/*框框整体的位置，0px是指离网页的顶部和下部的距离，auto控制的是左右距离为自动调节*/
+			width: 1620px;
+			/*框框的宽度*/
+			height: 1000px;
+			/*框框的长度*/
+			padding: 0px;
+			/*将框框的padding设置为零，不然会导致框框里的内容与大框边缘有间隔*/
+			border: 1px solid#282626;
+			/*添加边框,虽然说和背景一样就是了。*/
+			position: fixed;
+			top: 0;
+			z-index: 999;
+			width: 100%;
+			/*这四条应该可以实现吸顶，分别是固定，对齐，确保在其它栏之上，设置宽度*/
+			float: left;
+			/*放在左边*/
+		}
+
+		li {
+			list-style-type: none;
+			/*这样小框里面的字就没有下划线了！！！！*/
+		}
+
+		.daohanglande {
+			display: block;
+			/*将a变成块状*/
+			width: 200px;
+			/*设置块的宽度*/
+			height: 115px;
+			/*设置块的长度*/
+			font-family: Microsoft Yahei;
+			/*字体，哈哈，yahei*/
+			line-height: 100px;
+			/*设置字体在块中的高度*/
+			background-color: #222020;
+			margin: 0px 0px;
+			/*小框框的上下左右边距*/
+			color: #575555;
+			text-align: center;
+			/*字体居中*/
+			text-decoration: none;
+			/*这个用来消除下划线*/
+			font-size: 15px;
+
+		}
+
+		.daohanglande:hover {
+			background-color: #771908;
+			/*鼠标干上去，产生交互作用（变色)*/
+		}
+
+
+		.gongjulan1 {
+			float: left;
+			/*放左边*/
+			width: 400px;
+			height: 800px;
+			background-color: #4a4848;
+			margin-left: 1230px;
+			border-radius: 3%;
+			position: fixed;
+			top: 0;
+			z-index: 999;
+
+		}
+
+		.gongjulandebiaoti {
+			text-align: center;
+			color: aliceblue;
+		}
+
+
+
+		.sousuolan {
+			display: flex;
+			width: 100%;
+			background-color: #201e1e;
+		}
+
+		.sousuolanshuru {
+			flex: 1;
+			border: none;
+			outline: none;
+			padding: 8px;
+			font-size: 14px;
+			background-color: transparent;
+			color: aliceblue;
+		}
+
+		.sousuolananniu {
+			padding: 8px 12px;
+			background-color: #2e2e2d;
+			color: #a40a0a;
+			border: none;
+			outline: none;
+			cursor: pointer;
+		}
+
+		.zhengwenbufen {
+			display: flex;
+			flex-direction: column;
+			float: right;
+
+		}
+
+
+
+		.zhengwenlan {
+			border-radius: 20px;
+			/*圆角*/
+			float: right;
+			/*放右边*/
+			background-color: #393636;
+			padding: 40px;
+			/*填充小框*/
+			margin-bottom: 10px;
+			margin-right: 415px;
+			width: 910px;
+			height: 1300px;
+
+		}
+
+
+		.yonghumintouxiangbiaoti {
+			display: flex;
+			align-items: center;
+			/* 垂直居中对齐 */
+			gap: 20px;
+			/* 图片和文字之间的间距 */
+		}
+
+		.yonghumin {
+			line-height: 0.4;
+			color: aliceblue;
+		}
+
+		.hangneizhengwen {
+			color: aliceblue;
+		}
+	</style>
+</head>
+
+<body style="background-color: rgb(42,43 ,43 );">
+	<div>
+		<ul class="daohang">
+
+			<li><a href="LAATCODE.html" class="daohanglande">LAATCODE</a></li>
+			<li><a href="xuexi.html" class="daohanglande">学习</a></li>
+			<li><a href="tiku.html" class="daohanglande">题库</a></li>
+			<li><a href="jingsai.html" class="daohanglande">竞赛</a></li>
+			<li><a href="taolun.html" class="daohanglande">讨论</a></li>
+			<li><a href="qiuzhi.html" class="daohanglande">求职</a></li>
+			<li><a href="shangcheng.html" class="daohanglande">商城</a></li>
+			<img src="logo2.jpg" width="200px" height="150px" alt="一个logo"> <!--哼哼，这可是我自己画的哦！！！-->
+		</ul>
+	</div>
+
+
+
+
+
+
+
+	<div class="gongjulan1">
+		<div class="gongjulandebiaoti">
+			<h3>暂定工具栏及用户界面</h3>
+		</div>
+		<div class="sousuolan">
+			<input type="text" placeholder="百度一下,你就知道(bushi)" class="sousuolanshuru">
+			<button type="button" class="sousuolananniu">搜索</button>
+		</div>
+		<div class="gongjulanrili">
+
+		</div>
+
+	</div>
+
+	<div class="zhengwenzuidadediv">
+		<div class="zhengwenbufen">
+
+			<div class="zhengwenlan">
+
+				<div class="yonghumintouxiangbiaoti">
+					<div class="yonghutouxiang">
+						<img src="logo.jpg" alt="touxiang" width="55px" height="55px">
+					</div>
+					<div class="yonghumin">
+						<h4>LAAT哥</h4>
+						<h2>第一篇文章</h2>
+					</div>
+				</div>
+				<div class="hangneizhengwen">
+					<p>游戏发生在一个被称作“提瓦特大陆”的幻想世界，在这里，被神选中的人将被授予“神之眼”，导引元素之力。玩家将扮演一位名为“旅行者”的神秘角色，在自由的旅行中邂逅性格各异、能力独特的同伴们，和他们一起击败强敌，找回失散的亲人——同时，逐步发掘“原神”的真相
+						[4] 。
+					</p>
+					<p> 这里是七种元素交汇的幻想世界“提瓦特”。
+						在遥远的过去，人们藉由对神灵的信仰，获赐了驱动元素的力量，得以在荒野中筑起家园。
+						五百年前，古国的覆灭却使得天地变异……
+						如今，席卷大陆的灾难已经停息，和平却仍未如期光临。
+						作为故事的主人公，你从世界之外漂流而来，降临大地。你将在这广阔的世界中，自由旅行、结识同伴、寻找掌控尘世元素的七神，直到与分离的血亲重聚 [6] 。
+					</p>
+					<p>中国市场
+						2020年10月29日,Sensor
+						Tower发布了《原神》上市以来移动版30天的预估收入,以2.45亿美元(折合人民币约16亿元)高居同时间段全球移动手游首位。需要注意的是,这个数字并不包括中国及其他地区第三方安卓市场的收入
+						[66] 。
+						2020年11月13日,Sensor Tower对外发布了最新的10月报告。报告中显示,2020年10月米哈游《原神》在全球 App Store和Google
+						Play吸金2.39亿美元,位列全球手游畅销榜榜首,其中来自中国的收入占31% [67] 。
+						2021年4月13日,Sensor Tower发布了3月中国手游海外收入排名,《原神》移动端海外吸金将近1.16亿美元 [83] 。
+					</p>
+					<p>日本市场
+						根据Sensor
+						Tower商店情报平台公布的数据,《原神》在日本上的收入多次超过了中国,2020年11月和2020年12月《原神》在日本市场的收入都超过了中国,其中2020年12月《原神》在日本的收入占比已达30.3%
+						[68-69]。
+					</p>
+					<p>海外市场
+						2022年,Sensor Tower商店情报平台最新数据显示,2022年1月中国出海手游榜 《原神》拿下海外手游收入冠军 [171] 。
+						2022年8月,Twitter发布《游戏出海白皮书》,《原神》是2021年在Twitter上被提及最多的Top 10游戏 [228] 。
+						2023年1月28日,Sensor Tower发布了2022中国手游出海年度盘点,在2022年中国手游海外收入TOP30榜单中,米哈游的《原神》蝉联了出海收入冠军 [342] [347]
+						。3月15日消息,Sensor Tower商店情报数据显示,2023年2月米哈游《原神》移动端以1.86亿美元的收入位列榜单第2名 [371] 。</p>
+					<p>
+						我好想做刻晴小姐的狗啊。
+						可是刻晴小姐说她喜欢的是猫，我哭了。
+						我知道既不是狗也不是猫的我为什么要哭的。因为我其实是一只老鼠。
+						我从没奢望刻晴小姐能喜欢自己。我明白的，所有人都喜欢理解余裕上手天才打钱的萌萌的狗狗或者猫猫，没有人会喜欢阴湿带病的老鼠。
+						但我还是问了刻晴小姐:“我能不能做你的狗？”
+						我知道我是注定做不了狗的。但如果她喜欢狗，我就可以一直在身边看着她了，哪怕她怀里抱着的永远都是狗。
+						可是她说喜欢的是猫。
+						她现在还在看着我，还在逗我开心，是因为猫还没有出现，只有我这老鼠每天蹑手蹑脚地从洞里爬出来，远远地和她对视。
+						等她喜欢的猫来了的时候，我就该重新滚回我的洞了吧。
+						但我还是好喜欢她，她能在我还在她身边的时候多看我几眼吗？
+						刻晴小姐说接下来的每个圣诞夜都要和大家一起过。我不知道大家指哪些人。好希望这个集合能够对我做一次胞吞。
+						猫猫还在害怕刻晴小姐。
+						我会去把她爱的猫猫引来的。
+						我知道稍有不慎，我就会葬身猫口。
+						那时候刻晴小姐大概会把我的身体好好地装起来扔到门外吧。
+						那我就成了一包鼠条，嘻嘻。
+						我希望她能把我扔得近一点，因为我还是好喜欢她。会一直喜欢下去的。
+						我的灵魂透过窗户向里面看去，挂着的铃铛在轻轻鸣响，刻晴小姐慵懒地靠在沙发上，表演得非常温顺的橘猫坐在她的肩膀。壁炉的火光照在她的脸庞，我冻僵的心脏在风里微微发烫。
+					</p>
+					<img src="keqingmywife.jpg" alt="wodelaopo" width="900px" height="500px">
+
+
+
+
+
+
+
+
+				</div>
+
+
+</body>
+
+</html>
