@@ -5,8 +5,9 @@
 	<meta charset="utf-8">
 	<title>LAATCODE</title>
 	<style type="text/css">
-		.daohang {/*这个和导航栏小框是连体的，规定一个最大的框，但为了美观，调色至不可见*/
-			
+		.daohang {
+			/*这个和导航栏小框是连体的，规定一个最大的框，但为了美观，调色至不可见*/
+
 			margin: 0px auto;
 			/*框框整体的位置，0px是指离网页的顶部和下部的距离，auto控制的是左右距离为自动调节*/
 			width: 1620px;
@@ -79,7 +80,7 @@
 			color: aliceblue;
 		}
 
-		
+
 
 		.sousuolan {
 			display: flex;
@@ -140,7 +141,7 @@
 			padding: 40px;
 			/*填充小框*/
 			margin-bottom: 10px;
-			margin-right:415px ;
+			margin-right: 415px;
 			width: 910px;
 			height: 160px;
 
@@ -172,8 +173,94 @@
 			background-color: #771908;
 		}
 
-		 
+		.gongjulanrili {
+			text-align: center;
+			margin-top: 30px;
+		}
+
+		.gongjulanrili1 {
+			text-decoration: none;
+			color: rgb(108, 108, 110);
+			display: block;
+			width: 55px;
+			height: 30px;
+			font-family: Microsoft Yahei;
+			line-height: 27px;
+			background-color: #323030;
+			text-align: center;
+			font-size: 14px;
+			border-radius: 16%;
+
+
+		}
+
+		.gongjulanrili2 {
+			text-decoration: none;
+			color: rgb(108, 109, 111);
+			display: block;
+			width: 55px;
+			height: 30px;
+			font-family: Microsoft Yahei;
+			line-height: 27px;
+			background-color: #323030;
+			text-align: center;
+			font-size: 14px;
+			/*调整字的整体大小*/
+			border-radius: 16%;
+		}
+
+		.gongjulanrili1:hover {
+			background-color: #900404;
+		}
+
+		.gongjulanrili2:hover {
+			background-color: #900404;
+		}
+
+		.meiriyitikuang {
+			display: block;
+			width: 400px;
+			height: 100px;
+			border-radius: 16px;
+			background-color: #393636;
+			margin-top: 10px;
+
+			text-decoration: none;
+		}
+
+		.meiriyitibiaoti {
+			font-size: 15px;
+			color: aliceblue;
+			margin-left: 10%;
+			line-height: 55px;
+		}
+
+		.meiriyititubiao {
+			margin-left: 16px;
+			font-size: 14px;
+		}
+
+		.yuedujihuabiao{
+			background-color: #171616;
+			height: 150px;
+			border-radius: 16px;
+		}
+		.yuedujihuabiaoti{
+			color: aliceblue;
+			margin-left: 15px;
+		}
+
+		.yuedujihuaxiaokuai{
+			display: block;
+			width:30px;
+			height: 30px;
+			background-color: #4e4b4b;/*用color不行欸*/
+			border-radius: 8px;
+
+		}
 	</style>
+
+
 	<link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
 
 </head>
@@ -192,13 +279,13 @@
 			<img src="logo2.jpg" width="200px" height="150px" alt="一个logo"> <!--哼哼，这可是我自己画的哦！！！-->
 		</ul>
 	</div>
-	
-	
-	
-	
-	
-	
-	
+
+
+
+
+
+
+
 	<div class="gongjulan1">
 		<div class="gongjulandebiaoti">
 			<h3>暂定工具栏及用户界面</h3>
@@ -208,24 +295,112 @@
 			<button type="button" class="sousuolananniu">搜索</button>
 		</div>
 		<div class="gongjulanrili">
+			<table>
+				<tr>
+
+					<td><a href="" class="gongjulanrili1">&nbsp;MON&nbsp;</a></td>
+					<td><a href="" class="gongjulanrili1">&nbsp;TUE&nbsp;</a></td>
+					<td><a href="" class="gongjulanrili1">&nbsp;WED&nbsp;</a></td>
+					<td><a href="" class="gongjulanrili1">&nbsp;TUR&nbsp;</a></td>
+					<td><a href="" class="gongjulanrili1">&nbsp;FRI&nbsp;</a></td>
+					<td><a href="" class="gongjulanrili1">&nbsp;SAU&nbsp;</a></td>
+					<td><a href="" class="gongjulanrili1">&nbsp;SUN&nbsp;</a></td>
+				</tr>
+				<tr>
+
+					<td><a href="" class="gongjulanrili2">&nbsp;周一&nbsp;</a></td><!--&nbsp是空格，它和zi体大小有关-->
+					<td><a href="" class="gongjulanrili2">&nbsp;周二&nbsp;</a></td>
+					<td><a href="" class="gongjulanrili2">&nbsp;周三&nbsp;</a></td>
+					<td><a href="" class="gongjulanrili2">&nbsp;周四&nbsp;</a></td>
+					<td><a href="" class="gongjulanrili2">&nbsp;周五&nbsp;</a></td>
+					<td><a href="" class="gongjulanrili2">&nbsp;周六&nbsp;</a></td>
+					<td><a href="" class="gongjulanrili2">&nbsp;周日&nbsp;</a></td>
+				</tr>
+			</table>
+		</div>
+		<div class="gongjulanmeiriyiti">
+			<a href="" class="meiriyitikuang">
+				<div class="meiriyititubiao">
+					<i class="fa fa-fire" aria-hidden="true" style="color: rgb(188, 40, 3);">&nbsp;&nbsp;&nbsp;每日一题</i>
+				</div>
+				<p class="meiriyitibiaoti">648:原神抽卡问题</p>
+			</a>
+		</div>
+		<div class="yuedujihuabufen">
+			<div class="yuedujihuabiaoti">
+				<h3>本月完成情况：</h3>
+			</div>
+			<div class="yuedujihuabiao">
+				<table>
+					<tr>
+						<a href="" class="yuedujihuaxiaokuai"></a>
+						<a href="" class="yuedujihuaxiaokuai"></a>
+						<a href="" class="yuedujihuaxiaokuai"></a>
+					</tr>
+					<tr>
+						<a href="" class="yuedujihuaxiaokuai"></a>
+						<a href="" class="yuedujihuaxiaokuai"></a>
+						<a href="" class="yuedujihuaxiaokuai"></a>
+					</tr>
+					<tr>
+						<a href="" class="yuedujihuaxiaokuai"></a>
+						<a href="" class="yuedujihuaxiaokuai"></a>
+						<a href="" class="yuedujihuaxiaokuai"></a>
+					</tr>
+					<tr>
+						<a href="" class="yuedujihuaxiaokuai"></a>
+						<a href="" class="yuedujihuaxiaokuai"></a>
+						<a href="" class="yuedujihuaxiaokuai"></a>
+					</tr>
+					<tr>
+						<a href="" class="yuedujihuaxiaokuai"></a>
+						<a href="" class="yuedujihuaxiaokuai"></a>
+						<a href="" class="yuedujihuaxiaokuai"></a>
+					</tr>
+					<tr>
+						<a href="" class="yuedujihuaxiaokuai"></a>
+						<a href="" class="yuedujihuaxiaokuai"></a>
+						<a href="" class="yuedujihuaxiaokuai"></a>
+					</tr>
+					<tr>
+						<a href="" class="yuedujihuaxiaokuai"></a>
+						<a href="" class="yuedujihuaxiaokuai"></a>
+						<a href="" class="yuedujihuaxiaokuai"></a>
+					</tr>
+					<tr>
+						<a href="" class="yuedujihuaxiaokuai"></a>
+						<a href="" class="yuedujihuaxiaokuai"></a>
+						<a href="" class="yuedujihuaxiaokuai"></a>
+					</tr>
+					<tr>
+						<a href="" class="yuedujihuaxiaokuai"></a>
+						<a href="" class="yuedujihuaxiaokuai"></a>
+						<a href="" class="yuedujihuaxiaokuai"></a>
+					</tr>
+					<tr>
+						<a href="" class="yuedujihuaxiaokuai"></a>
+						<a href="" class="yuedujihuaxiaokuai"></a>
+						<a href="" class="yuedujihuaxiaokuai"></a>
+					</tr>
+				</table>
+			</div>
 
 		</div>
-
 	</div>
 
 
 
 
-	
-	
-	
-	
+
+
+
+
 	<div class="zhengwenzuidadediv">
 		<div class="zhengwenbufen">
 			<div class="zhengwenbiaoti">
 				<div class="zhengwenbiaotidezi">
 
-					<h1>一些文章</h1>
+					<h1>推荐</h1>
 
 				</div>
 
