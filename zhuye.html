@@ -30,6 +30,7 @@
 		li {
 			list-style-type: none;
 			/*这样小框里面的字就没有下划线了！！！！*/
+			width: 200px;
 		}
 
 		.daohanglande {
@@ -65,7 +66,7 @@
 			float: left;
 			/*放左边*/
 			width: 400px;
-			height: 800px;
+			height: 600px;
 			background-color: #323030;
 			margin-left: 1230px;
 			border-radius: 3%;
@@ -120,6 +121,7 @@
 			background-color: #900404;
 			padding: 20px;
 			margin-bottom: 15px;
+			margin-right: 415px;
 			width: 200px;
 			height: 60px;
 			text-decoration: none;
@@ -131,6 +133,7 @@
 			line-height: 50%;
 			color: aliceblue;
 		}
+
 
 		.zhengwenlan {
 			border-radius: 20px;
@@ -145,6 +148,38 @@
 			width: 910px;
 			height: 160px;
 
+		}
+
+		.zhengwenyingcang {
+			position: absolute;
+			margin-left: 230px;
+			display: none;
+			/* 默认隐藏 */
+			width: 680px;
+			height: 78.5px;
+			background-color: #c20909;
+			border-radius: 30px;
+		}
+
+		.yonghumintouxiangbiaoti:hover>.zhengwenyingcang {
+			/*不写这个 > 隐藏部分就出不来，这是来规定父子关系的*/
+			display: block;
+			/* 当鼠标经过时，展开的内容可见 */
+
+		}
+
+		.zhengwendinglan1 {
+			display: block;
+			text-decoration: none;
+			text-align: center;
+			font-size: 20px;
+			color: aliceblue;
+			width: 60px;
+			height: 60px;
+			background-color: #c02020;
+			margin-top: 20px;
+			border-radius: 16px;
+			margin-right: 210px;
 		}
 
 
@@ -171,6 +206,7 @@
 
 		.zhengwenlanchaolianjie:hover {
 			background-color: #771908;
+			/*上下两栏没有起到作用，似乎需要借助js*/
 		}
 
 		.gongjulanrili {
@@ -232,7 +268,7 @@
 			font-size: 15px;
 			color: aliceblue;
 			margin-left: 10%;
-			line-height: 55px;
+
 		}
 
 		.meiriyititubiao {
@@ -240,23 +276,174 @@
 			font-size: 14px;
 		}
 
-		.yuedujihuabiao{
-			background-color: #171616;
-			height: 150px;
-			border-radius: 16px;
+		.yuedujihuabiao {
+			background-color: #323030;
+			height: 110px;
+
 		}
-		.yuedujihuabiaoti{
+
+		.yuedujihuabiaoti {
 			color: aliceblue;
 			margin-left: 15px;
 		}
 
-		.yuedujihuaxiaokuai{
-			display: block;
-			width:30px;
-			height: 30px;
-			background-color: #4e4b4b;/*用color不行欸*/
-			border-radius: 8px;
+		.yuedujihuabiao1 {
+			display: grid;
+			/*grid似乎更多用来写二维的，flex是一维的，一个方向*/
+			grid-template-columns: repeat(10, 1fr);
+			/* 将网格分成10个等宽的列。repeat()函数接收两个参数：需要重复的次数和要重复的值。在这种情况下，我们将"1fr"重复10次，所以我们得到了其中的每一列都宽度相等的10列。baidu!!! */
+			grid-gap: 10px;
+			/* 单元格间隔10px */
+		}
 
+		.yuedujihuabiaokuai {
+			width: 30px;
+			height: 30px;
+			background-color: #494848;
+			border-radius: 10%;
+		}
+
+		.tiaolanbufen {
+			position: relative;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			/*三行用来把几个按钮放在一行*/
+			gap: 30px;
+		}
+
+		.yonghuyingcang {
+			position: absolute;
+			top: 100%;
+			/* 将展开的内容放在图标下方 */
+			left: 0;
+			display: none;
+			/* 默认隐藏 */
+			width: 400px;
+			height: 360px;
+			background-color: #6b6b6b;
+			border-radius: 30px;
+		}
+
+		.yonghutouxiang:hover>.tongzhiyingcang {
+			/*不写这个 > 隐藏部分就出不来，这是来规定父子关系的*/
+			display: block;
+			/* 当鼠标经过时，展开的内容可见 */
+
+			opacity: 1 !important;
+
+		}
+
+		.yonghuxinxi:hover>.yonghuyingcang {
+			/*不写这个 > 隐藏部分就出不来，这是来规定父子关系的*/
+			display: block;
+			/* 当鼠标经过时，展开的内容可见 */
+			transform: translateY(10px);
+			/* 将内容向下移动10px */
+
+
+		}
+
+		.yonghuxinxi1 {
+			display: block;
+			text-decoration: none;
+			text-align: center;
+			font-size: 20px;
+			color: aliceblue;
+			width: 60px;
+			height: 60px;
+			background-color: #232323;
+			margin-top: 20px;
+			border-radius: 16px;
+
+		}
+
+		.shezhibufen1 {
+			display: block;
+			text-decoration: none;
+			text-align: center;
+			font-size: 20px;
+			color: aliceblue;
+			width: 60px;
+			height: 60px;
+			background-color: #232323;
+			margin-top: 20px;
+			border-radius: 16px;
+
+		}
+
+
+
+
+		.tongzhibufen1 {
+			display: block;
+			text-decoration: none;
+			text-align: center;
+			font-size: 20px;
+			color: aliceblue;
+			width: 60px;
+			height: 60px;
+			background-color: #232323;
+			margin-top: 20px;
+			border-radius: 16px;
+
+		}
+
+		.fa {
+			margin-top: 20px;
+		}
+
+
+		.tongzhiyingcang {
+			position: absolute;
+			top: 100%;
+			/* 将展开的内容放在图标下方 */
+			left: 0;
+			display: none;
+			/* 默认隐藏 */
+			width: 400px;
+			height: 360px;
+			background-color: #6b6b6b;
+			border-radius: 30px;
+			z-index: 1;
+			opacity: 0 !important;
+			transition: opacity 0.5s !important;
+			/*为啥没有起效？？？？？？？*/
+
+		}
+
+		.tongzhibufen:hover>.tongzhiyingcang {
+			/*不写这个 > 隐藏部分就出不来，这是来规定父子关系的*/
+			display: block;
+			/* 当鼠标经过时，展开的内容可见 */
+			transform: translateY(10px);
+			/* 将内容向下移动10px */
+
+			opacity: 1 !important;
+		}
+
+		.tongzhidezi {
+			text-align: center;
+			font-size: 10px;
+			color: #343232;
+		}
+
+		.huidaodingbuanniu {
+			display: block;
+			text-decoration: none;
+			text-align: center;
+			font-size: 20px;
+			width: 60px;
+			height: 60px;
+			margin-top: 20px;
+			background-color: #232323;
+			border-radius: 16px;
+
+
+		}
+
+		.huidinganniu {
+			color: azure;
 		}
 	</style>
 
@@ -267,7 +454,7 @@
 
 <body style="background-color: rgb(42, 43, 43);">
 	<div>
-		<ul class="daohang">
+		<ul class="daohang" style="width: 200px;">
 
 			<li><a href="LAATCODE.html" class="daohanglande">LAATCODE</a></li>
 			<li><a href="xuexi.html" class="daohanglande">学习</a></li>
@@ -331,61 +518,78 @@
 				<h3>本月完成情况：</h3>
 			</div>
 			<div class="yuedujihuabiao">
-				<table>
-					<tr>
-						<a href="" class="yuedujihuaxiaokuai"></a>
-						<a href="" class="yuedujihuaxiaokuai"></a>
-						<a href="" class="yuedujihuaxiaokuai"></a>
-					</tr>
-					<tr>
-						<a href="" class="yuedujihuaxiaokuai"></a>
-						<a href="" class="yuedujihuaxiaokuai"></a>
-						<a href="" class="yuedujihuaxiaokuai"></a>
-					</tr>
-					<tr>
-						<a href="" class="yuedujihuaxiaokuai"></a>
-						<a href="" class="yuedujihuaxiaokuai"></a>
-						<a href="" class="yuedujihuaxiaokuai"></a>
-					</tr>
-					<tr>
-						<a href="" class="yuedujihuaxiaokuai"></a>
-						<a href="" class="yuedujihuaxiaokuai"></a>
-						<a href="" class="yuedujihuaxiaokuai"></a>
-					</tr>
-					<tr>
-						<a href="" class="yuedujihuaxiaokuai"></a>
-						<a href="" class="yuedujihuaxiaokuai"></a>
-						<a href="" class="yuedujihuaxiaokuai"></a>
-					</tr>
-					<tr>
-						<a href="" class="yuedujihuaxiaokuai"></a>
-						<a href="" class="yuedujihuaxiaokuai"></a>
-						<a href="" class="yuedujihuaxiaokuai"></a>
-					</tr>
-					<tr>
-						<a href="" class="yuedujihuaxiaokuai"></a>
-						<a href="" class="yuedujihuaxiaokuai"></a>
-						<a href="" class="yuedujihuaxiaokuai"></a>
-					</tr>
-					<tr>
-						<a href="" class="yuedujihuaxiaokuai"></a>
-						<a href="" class="yuedujihuaxiaokuai"></a>
-						<a href="" class="yuedujihuaxiaokuai"></a>
-					</tr>
-					<tr>
-						<a href="" class="yuedujihuaxiaokuai"></a>
-						<a href="" class="yuedujihuaxiaokuai"></a>
-						<a href="" class="yuedujihuaxiaokuai"></a>
-					</tr>
-					<tr>
-						<a href="" class="yuedujihuaxiaokuai"></a>
-						<a href="" class="yuedujihuaxiaokuai"></a>
-						<a href="" class="yuedujihuaxiaokuai"></a>
-					</tr>
-				</table>
+				<div class="yuedujihuabiao1">
+					<div class="yuedujihuabiaokuai"></div>
+					<div class="yuedujihuabiaokuai"></div>
+					<div class="yuedujihuabiaokuai"></div>
+					<div class="yuedujihuabiaokuai"></div>
+					<div class="yuedujihuabiaokuai"></div>
+					<div class="yuedujihuabiaokuai"></div>
+					<div class="yuedujihuabiaokuai"></div>
+					<div class="yuedujihuabiaokuai"></div>
+					<div class="yuedujihuabiaokuai"></div>
+					<div class="yuedujihuabiaokuai"></div>
+					<div class="yuedujihuabiaokuai"></div>
+					<div class="yuedujihuabiaokuai"></div>
+					<div class="yuedujihuabiaokuai"></div>
+					<div class="yuedujihuabiaokuai"></div>
+					<div class="yuedujihuabiaokuai"></div>
+					<div class="yuedujihuabiaokuai"></div>
+					<div class="yuedujihuabiaokuai"></div>
+					<div class="yuedujihuabiaokuai"></div>
+					<div class="yuedujihuabiaokuai"></div>
+					<div class="yuedujihuabiaokuai"></div>
+					<div class="yuedujihuabiaokuai"></div>
+					<div class="yuedujihuabiaokuai"></div>
+					<div class="yuedujihuabiaokuai"></div>
+					<div class="yuedujihuabiaokuai"></div>
+					<div class="yuedujihuabiaokuai"></div>
+					<div class="yuedujihuabiaokuai"></div>
+					<div class="yuedujihuabiaokuai"></div>
+					<div class="yuedujihuabiaokuai"></div>
+					<div class="yuedujihuabiaokuai"></div>
+					<div class="yuedujihuabiaokuai"></div>
+				</div>
+			</div>
+		</div>
+
+
+
+
+
+
+
+		<div class="tiaolanbufen">
+			<div class="yonghuxinxi">
+				<a href="" class="yonghuxinxi1"><i class="fa fa-id-card"></i></a>
+				<div class="yonghuyingcang">
+
+				</div>
 			</div>
 
+			<div class="shezhibufen">
+				<a href="" class="shezhibufen1"><i class="fa fa-tasks"></i></a>
+				<div class="shezhiyingcang">
+
+				</div>
+			</div>
+
+			<div class="tongzhibufen">
+				<a href="" class="tongzhibufen1"><i class="fa fa-bell"></i></a>
+				<div class="tongzhiyingcang">
+					<div class="tongzhidezi">
+						<h2>没有通知(因为不会写后端)</h2>
+					</div>
+				</div>
+			</div>
+			<div class="huidaodingbuanniu">
+				<a href="" class="huidinganniu"><i class="fa fa-angle-double-up"></i></a>
+			</div>
 		</div>
+
+
+
+
 	</div>
 
 
@@ -395,131 +599,55 @@
 
 
 
+
+
+
+
+
 	<div class="zhengwenzuidadediv">
-		<div class="zhengwenbufen">
-			<div class="zhengwenbiaoti">
-				<div class="zhengwenbiaotidezi">
 
-					<h1>推荐</h1>
+		<div class="zhengwenbiaoti">
+			<div class="zhengwenbiaotidezi">
 
-				</div>
+				<h1>推荐</h1>
 
 			</div>
-			<div class="zhengwenlan">
 
-				<div class="yonghumintouxiangbiaoti">
-					<div class="yonghutouxiang">
+		</div>
+		<div class="zhengwendinglan">
+			<a href="" class="zhengwendinglan1"><i class="fa fa-bug"></i></a>
+			<a href="" class="zhengwendinglan2"><i class="fa fa-cube"></i></a>
+			<a href="" class="zhengwendinglan3"><i class="fa fa-cogs"></i></a>
+		</div>
+
+
+
+
+
+
+
+
+		<div class="zhengwenlan">
+
+			<div class="yonghumintouxiangbiaoti">
+				<div class="zhengwenyonghutouxiangbufen">
+					<div class="zhengwenyonghutouxiang">
 						<img src="logo.jpg" alt="touxiang" width="55px" height="55px">
-					</div>
-					<div class="yonghumin">
-						<h4>LAAT哥</h4>
-						<h2>第一篇文章</h2>
-					</div>
-				</div>
-				<div class="hangneizhengwen">
-					<p>游戏发生在一个被称作“提瓦特大陆”的幻想世界，在这里，被神选中的人将被授予“神之眼”，导引元素之力。玩家将扮演一位名为“旅行者”的神秘角色，在自由的旅行中邂逅性格各异、能力独特的同伴们，和他们一起击败强敌，找回失散的亲人——同时，逐步发掘“原神”的真相
-						[4] 。</p>
-				</div>
-
-			</div>
-			<div class="zhengwenlan">
-
-				<div class="yonghumintouxiangbiaoti">
-					<div class="yonghutouxiang">
-						<img src="logo.jpg" alt="touxiang" width="55px" height="55px">
-					</div>
-					<div class="yonghumin">
-						<h4>LAAT哥</h4>
-						<h2>第二篇文章</h2>
+						<div class="zhengwenyingcang"> <!--这个还没解决。。。。-->
+							<h2>wwww</h2>
+						</div>
 					</div>
 				</div>
-				<div class="hangneizhengwen">
-					<p>游戏发生在一个被称作“提瓦特大陆”的幻想世界，在这里，被神选中的人将被授予“神之眼”，导引元素之力。玩家将扮演一位名为“旅行者”的神秘角色，在自由的旅行中邂逅性格各异、能力独特的同伴们，和他们一起击败强敌，找回失散的亲人——同时，逐步发掘“原神”的真相
-						[4] 。</p>
+				<div class="yonghumin">
+					<h4>LAAT哥</h4>
+					<h2>第一篇文章</h2>
 				</div>
 
 			</div>
-			<div class="zhengwenlan">
-
-				<div class="yonghumintouxiangbiaoti">
-					<div class="yonghutouxiang">
-						<img src="logo.jpg" alt="touxiang" width="55px" height="55px">
-					</div>
-					<div class="yonghumin">
-						<h4>LAAT哥</h4>
-						<h2>第三篇文章</h2>
-					</div>
-				</div>
-				<div class="hangneizhengwen">
-					<p>游戏发生在一个被称作“提瓦特大陆”的幻想世界，在这里，被神选中的人将被授予“神之眼”，导引元素之力。玩家将扮演一位名为“旅行者”的神秘角色，在自由的旅行中邂逅性格各异、能力独特的同伴们，和他们一起击败强敌，找回失散的亲人——同时，逐步发掘“原神”的真相
-						[4] 。</p>
-				</div>
-
+			<div class="hangneizhengwen">
+				<p>游戏发生在一个被称作“提瓦特大陆”的幻想世界，在这里，被神选中的人将被授予“神之眼”，导引元素之力。玩家将扮演一位名为“旅行者”的神秘角色，在自由的旅行中邂逅性格各异、能力独特的同伴们，和他们一起击败强敌，找回失散的亲人——同时，逐步发掘“原神”的真相
+					[4] 。</p>
 			</div>
-			<div class="zhengwenlan">
-
-				<div class="yonghumintouxiangbiaoti">
-					<div class="yonghutouxiang">
-						<img src="logo.jpg" alt="touxiang" width="55px" height="55px">
-					</div>
-					<div class="yonghumin">
-						<h4>LAAT哥</h4>
-						<h2>第四篇文章</h2>
-					</div>
-				</div>
-				<div class="hangneizhengwen">
-					<p>游戏发生在一个被称作“提瓦特大陆”的幻想世界，在这里，被神选中的人将被授予“神之眼”，导引元素之力。玩家将扮演一位名为“旅行者”的神秘角色，在自由的旅行中邂逅性格各异、能力独特的同伴们，和他们一起击败强敌，找回失散的亲人——同时，逐步发掘“原神”的真相
-						[4] 。</p>
-				</div>
-
-			</div>
-			<div class="zhengwenlan">
-
-				<div class="yonghumintouxiangbiaoti">
-					<div class="yonghutouxiang">
-						<img src="logo.jpg" alt="touxiang" width="55px" height="55px">
-					</div>
-					<div class="yonghumin">
-						<h4>LAAT哥</h4>
-						<h2>第五篇文章</h2>
-					</div>
-				</div>
-				<div class="hangneizhengwen">
-					<p>游戏发生在一个被称作“提瓦特大陆”的幻想世界，在这里，被神选中的人将被授予“神之眼”，导引元素之力。玩家将扮演一位名为“旅行者”的神秘角色，在自由的旅行中邂逅性格各异、能力独特的同伴们，和他们一起击败强敌，找回失散的亲人——同时，逐步发掘“原神”的真相
-						[4] 。</p>
-				</div>
-
-			</div>
-			<div class="zhengwenlan">
-
-				<div class="yonghumintouxiangbiaoti">
-					<div class="yonghutouxiang">
-						<img src="logo.jpg" alt="touxiang" width="55px" height="55px">
-					</div>
-					<div class="yonghumin">
-						<h4>LAAT哥</h4>
-						<h2>第六篇文章</h2>
-					</div>
-				</div>
-				<div class="hangneizhengwen">
-					<p>游戏发生在一个被称作“提瓦特大陆”的幻想世界，在这里，被神选中的人将被授予“神之眼”，导引元素之力。玩家将扮演一位名为“旅行者”的神秘角色，在自由的旅行中邂逅性格各异、能力独特的同伴们，和他们一起击败强敌，找回失散的亲人——同时，逐步发掘“原神”的真相
-						[4] 。</p>
-				</div>
-
-			</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -530,6 +658,114 @@
 
 
 		</div>
+		<div class="zhengwenlan">
+
+			<div class="yonghumintouxiangbiaoti">
+				<div class="yonghutouxiang">
+					<img src="logo.jpg" alt="touxiang" width="55px" height="55px">
+				</div>
+				<div class="yonghumin">
+					<h4>LAAT哥</h4>
+					<h2>第二篇文章</h2>
+				</div>
+			</div>
+			<div class="hangneizhengwen">
+				<p>游戏发生在一个被称作“提瓦特大陆”的幻想世界，在这里，被神选中的人将被授予“神之眼”，导引元素之力。玩家将扮演一位名为“旅行者”的神秘角色，在自由的旅行中邂逅性格各异、能力独特的同伴们，和他们一起击败强敌，找回失散的亲人——同时，逐步发掘“原神”的真相
+					[4] 。</p>
+			</div>
+
+		</div>
+		<div class="zhengwenlan">
+
+			<div class="yonghumintouxiangbiaoti">
+				<div class="yonghutouxiang">
+					<img src="logo.jpg" alt="touxiang" width="55px" height="55px">
+				</div>
+				<div class="yonghumin">
+					<h4>LAAT哥</h4>
+					<h2>第三篇文章</h2>
+				</div>
+			</div>
+			<div class="hangneizhengwen">
+				<p>游戏发生在一个被称作“提瓦特大陆”的幻想世界，在这里，被神选中的人将被授予“神之眼”，导引元素之力。玩家将扮演一位名为“旅行者”的神秘角色，在自由的旅行中邂逅性格各异、能力独特的同伴们，和他们一起击败强敌，找回失散的亲人——同时，逐步发掘“原神”的真相
+					[4] 。</p>
+			</div>
+
+		</div>
+		<div class="zhengwenlan">
+
+			<div class="yonghumintouxiangbiaoti">
+				<div class="yonghutouxiang">
+					<img src="logo.jpg" alt="touxiang" width="55px" height="55px">
+				</div>
+				<div class="yonghumin">
+					<h4>LAAT哥</h4>
+					<h2>第四篇文章</h2>
+				</div>
+			</div>
+			<div class="hangneizhengwen">
+				<p>游戏发生在一个被称作“提瓦特大陆”的幻想世界，在这里，被神选中的人将被授予“神之眼”，导引元素之力。玩家将扮演一位名为“旅行者”的神秘角色，在自由的旅行中邂逅性格各异、能力独特的同伴们，和他们一起击败强敌，找回失散的亲人——同时，逐步发掘“原神”的真相
+					[4] 。</p>
+			</div>
+
+		</div>
+		<div class="zhengwenlan">
+
+			<div class="yonghumintouxiangbiaoti">
+				<div class="yonghutouxiang">
+					<img src="logo.jpg" alt="touxiang" width="55px" height="55px">
+				</div>
+				<div class="yonghumin">
+					<h4>LAAT哥</h4>
+					<h2>第五篇文章</h2>
+				</div>
+			</div>
+			<div class="hangneizhengwen">
+				<p>游戏发生在一个被称作“提瓦特大陆”的幻想世界，在这里，被神选中的人将被授予“神之眼”，导引元素之力。玩家将扮演一位名为“旅行者”的神秘角色，在自由的旅行中邂逅性格各异、能力独特的同伴们，和他们一起击败强敌，找回失散的亲人——同时，逐步发掘“原神”的真相
+					[4] 。</p>
+			</div>
+
+		</div>
+		<div class="zhengwenlan">
+
+			<div class="yonghumintouxiangbiaoti">
+				<div class="yonghutouxiang">
+					<img src="logo.jpg" alt="touxiang" width="55px" height="55px">
+				</div>
+				<div class="yonghumin">
+					<h4>LAAT哥</h4>
+					<h2>第六篇文章</h2>
+				</div>
+			</div>
+			<div class="hangneizhengwen">
+				<p>游戏发生在一个被称作“提瓦特大陆”的幻想世界，在这里，被神选中的人将被授予“神之眼”，导引元素之力。玩家将扮演一位名为“旅行者”的神秘角色，在自由的旅行中邂逅性格各异、能力独特的同伴们，和他们一起击败强敌，找回失散的亲人——同时，逐步发掘“原神”的真相
+					[4] 。</p>
+			</div>
+
+		</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</div>
 	</div>
 </body>
 
