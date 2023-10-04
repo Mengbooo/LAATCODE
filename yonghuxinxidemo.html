@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .yonghuyingcang {
+            top: 100%;
+            left: 0;
+            display: block;
+            width: 400px;
+            height: 340px;
+            background-color: #6b6b6b;
+            border-radius: 30px;
+        }
+
+
+        .yonghuxinxilanmu10 {
+            width: 400px;
+            height: 120px;
+            display: flex;
+            gap: 18px;
+            align-items: center;
+        }
+
+        
+        .lanmuqukuai {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            /* 设置2列，每列平分剩余空间 */
+            grid-template-rows: repeat(2, 1fr);
+            /* 设置3行，每行平分剩余空间 */
+            gap: 10px;
+            /* 设置格子之间的间隔大小 */
+            align-items: center;
+            justify-items: center;
+        }
+        .lanmuqukuai a {
+            display: flex;
+            width: 100px;
+            height: 100px;
+            background-color: rgb(44, 44, 44);
+            border-radius: 16px;
+            justify-content: center;
+            /* 水平居中 */
+            align-items: center;
+            /* 垂直居中 */
+            font-size: 36px;
+            color: rgb(112, 111, 111);
+            text-decoration: none;
+        }
+        .lanmuqukuai a p{
+            font-size: 16px;
+        }
+        </style>
+</head>
+
+<body style="background-color: rgb(30, 30, 30);">
+    <div class="yonghuyingcang">
+        <div class="yonghunxinxilanmu00">
+            <div class="yonghuxinxilanmu10">
+                <div class="yonghuxinxilanmutouxiang">
+                    <img src="logo.jpg" alt="" width="60px" height="60px">
+                </div>
+                <div class="yonghuxinxilannuminzi">
+                    <h2>LAAT  welcome</h2>
+                </div>
+            </div>
+            <div class="lanmuqukuai">
+                <a href=""><ion-icon name="albums-outline"></ion-icon><p>收藏</p></a>
+                <a href=""><ion-icon name="newspaper-outline"></ion-icon><p>笔记</p></a>
+                <a href=""><ion-icon name="help-circle-outline"></ion-icon><p>题解</p></a>
+                <a href=""><ion-icon name="pie-chart-outline"></ion-icon><p>分析</p></a>
+                <a href=""><ion-icon name="logo-euro"></ion-icon><p>积分</p></a>
+                <a href=""><ion-icon name="trending-up-outline"></ion-icon><p>进度</p></a>
+            </div>
+        </div>
+    </div>
+
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
